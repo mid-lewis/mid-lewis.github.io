@@ -13,6 +13,10 @@ A static, responsive academic website for GitHub Pages. No build tools or depend
 
 Replace “Your Name”, institutional details, and placeholder entries with your own content. Each page contains the same navigation and footer so it works without JavaScript. When changing navigation or shared identity details, update all five HTML files. The current page is identified with `aria-current="page"`.
 
+## Add your profile photo
+
+Upload your portrait as `assets/images/profile.jpg` (create the `images` directory under `assets` if needed). In `index.html`, replace the `photo-placeholder` div with the image element provided in the comment above it, and update its alt text with your name. The frame crops the photo to a portrait format; adjust `object-position` in the stylesheet if needed.
+
 ## Add your CV
 
 GitHub Pages hosts static files; it does not accept uploads from website visitors.
