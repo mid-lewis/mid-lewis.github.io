@@ -4,11 +4,11 @@ A static, responsive academic website for GitHub Pages. No build tools or depend
 
 ## Pages
 
-- `index.html` — introduction, biography, and contact details
+- `index.html` — short introduction and contact details
 - `research.html` — research interests and ongoing projects
-- `publications.html` — publications and work in progress
-- `teaching.html` — teaching philosophy, courses, and mentoring
-- `cv.html` — CV download area, education, and appointments
+- `publications.html` — publications, conference posters and presentations, and work in progress
+- `teaching.html` — lists of courses taught and teaching assistantships
+- `cv.html` — CV download area
 - `assets/css/style.css` — shared styles
 
 Replace “Your Name”, institutional details, and placeholder entries with your own content. Each page contains the same navigation and footer so it works without JavaScript. When changing navigation or shared identity details, update all five HTML files. The current page is identified with `aria-current="page"`.
