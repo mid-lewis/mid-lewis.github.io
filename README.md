@@ -40,4 +40,8 @@ Check each page and the top navigation in a browser. There is no build step or a
 
 Commit and push these files to `main`. In the repository's **Settings → Pages**, use **Deploy from a branch**, select `main` and `/ (root)`, and save. Once GitHub finishes deploying, the site will be available at https://mid-lewis.github.io/.
 
-All page and stylesheet links are relative, and no external fonts or scripts are required.
+The `.nojekyll` file tells GitHub Pages to serve this plain HTML/CSS site without Jekyll theme processing. Keep it in the repository root.
+
+All page and stylesheet links are relative, and no external fonts or scripts are required. Each page's stylesheet URL includes a `?v=` version token so browsers fetch updated styles after a release. Whenever the stylesheet changes, update that token consistently in all five HTML pages (the current token uses the first 12 characters of the CSS file's SHA-256 hash).
+
+To check a deployment, open the repository's **Actions** tab and confirm that the latest Pages run succeeded for your commit. If a previously opened tab still shows an old version, reload it after deployment completes.
